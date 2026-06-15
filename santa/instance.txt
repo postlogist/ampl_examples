@@ -1,41 +1,5 @@
-################################################################################
-Coordinate section giving x and y coordinates of nodes by node identification numbers starting at 1:
-NODE_COORD_SECTION
-<id> <x-coord> <y-coord>
-
-Demand section giving demands <dem> at nodes <id>:
-DEMAND_SECTION
-<id> <dem>
-
-Depot section giving a list of possible depot nodes
-<dep_id> and terminated by -1:
-DEPOT_SECTION
-<dep_id>
-
-The data part is terminated by
-EOF
-
-Additional sections are, according to problem:
-TIME_WINDOW_SECTION
-<id> <begin_hh>:<begin_mm> <end_hh>:<end_mm>
-where:
-
-<id> - identification number of node
-
-<begin_hh>:<begin_mm> - begin of time window, time given in hours and minutes
-
-<end_hh>:<end_mm> - end of time window
-
-STAND_TIME_SECTION
-<id> <time> - standing time in minutes at node <i>
-PICKUP_SECTION
-<id> <weight> <vol> - return load present at node <id> with weight in kg and volume in cubic meters.
-DEMAND_SECTION
-<id> <weight> <vol> - as in PICKUP_SECTION
-################################################################################
-
 DIMENSION : 201
-CAPACITY : 12600
+CAPACITY : 50000
 CAPACITY_VOL : 69
 NODE_COORD_SECTION
 1 23452 56766
